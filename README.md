@@ -1,23 +1,33 @@
-# Simple Online Store Project
+# Simple Online Store
 
-
-This project is a simple online store that allows users to place orders for products using HTML, CSS, and JavaScript. It doesn't include a backend, making it a front-end-only project. The goal of the project is to create a functional user interface for online shopping with product selection, quantity adjustment, and payment method selection.
+This is a simple online store webpage that allows users to order a backpack. The project is built using HTML, CSS, and JavaScript without any backend.
 
 ## Technologies Used
+
 - HTML
 - CSS
 - JavaScript
 
 ## Getting Started
 
-To run the project locally, follow these steps:
+To run this project on your local machine:
 
-1. Clone the repository:
-2. 2. Open the index.html file in your browser to view the website.
+1. Download or clone the repository.
+2. Open the folder in VS Code or any text editor.
+3. Open index.html in your browser (you can use the Live Server extension if you're using VS Code).
 
 ## How to Use
 
-1. Select a product.
-2. Enter your details and select a payment method.
-3. View the total cost and submit your order.
-4. A confirmation message will appear once the order is placed.
+1. Click the *Order Now* button.
+2. Fill in your name, address, quantity, and payment method.
+3. The total price will be calculated based on the quantity you enter.
+4. Click *Submit Order* to place the order.
+5. A confirmation message will appear after successful submission.
+
+## Author
+
+Dana Ahmed
+
+## License
+
+This project is for educational purposes only.
