@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Online Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="store-container">
+        <h1>Simple Online Store</h1>
+
+        <div class="product">
+            <img src="Backpack.jpg" alt="Backpack">
+            <h3>Backpack</h3>
+            <p>Price: 150 EGP</p>
+            <button onclick="orderProduct('Backpack', 150)">Order Now</button>
+        </div>
+
+        <div id="orderForm" style="display:none;">
+            <h2>Place Your Order</h2>
+            <form onsubmit="submitOrder(event)">
+                <input type="text" id="customerName" placeholder="Your Name" required>
+                <input type="text" id="address" placeholder="Your Address" required>
+                <input type="number" id="quantity" placeholder="Quantity" min="1" required oninput="updateTotal()">
+                <select id="paymentMethod" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="cash">Cash</option>
+                    <option value="card">Card</option>
+                </select>
+
+                <p id="totalPrice" style="font-weight:bold;">Total: 0 EGP</p>
+
+                <button type="submit">Submit Order</button>
+            </form>
+            <p id="orderConfirmation" style="display:none; color: green;">Order placed successfully!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
